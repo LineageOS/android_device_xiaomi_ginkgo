@@ -1,5 +1,7 @@
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.camera.not.cts.apk=1 \
+    vendor.camera.not.ctsverify.apk=1 \
     persist.vendor.camera.preview.ubwc=0 \
     persist.vendor.camera.isp.clock.optmz=0 \
     persist.vendor.camera.isp.turbo=1 \
