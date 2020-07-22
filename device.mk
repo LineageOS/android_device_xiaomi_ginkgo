@@ -21,8 +21,8 @@
 # definition file).
 #
 
-# Inherit from sdm660-common
-$(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
+# Inherit from sm6125-common
+$(call inherit-product, device/xiaomi/sm6125-common/common.mk)
 
 DEVICE_PATH := device/xiaomi/lavender
 
@@ -40,9 +40,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libstdc++.vendor
 
-# FM
-BOARD_HAVE_QCOM_FM := true
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
@@ -58,14 +55,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
-
-# Shims
-PRODUCT_PACKAGES += \
-    libcamera_sdm660_shim
-
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/lavender/lavender-vendor.mk)

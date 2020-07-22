@@ -20,6 +20,6 @@ set -e
 export DEVICE=lavender
 export VENDOR=xiaomi
 export DEVICE_BRINGUP_YEAR=2020
-export DEVICE_COMMON=sdm660-common
+export DEVICE_COMMON=sm6125-common
 
 ./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@

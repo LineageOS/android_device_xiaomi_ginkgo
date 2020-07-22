@@ -22,18 +22,13 @@
 # definition file).
 #
 
-# Inherit from sdm660-common
--include device/xiaomi/sdm660-common/BoardConfigCommon.mk
+# Inherit from sm6125-common
+-include device/xiaomi/sm6125-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/lavender
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lavender
-
-# Android Verified Boot
-BOARD_AVB_ENABLE := true
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -44,7 +39,6 @@ TARGET_SCREEN_DENSITY := 420
 
 # Kernel
 TARGET_KERNEL_CONFIG := lavender_defconfig
-BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 
@@ -54,8 +48,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3640619008
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2080305152
-BOARD_DTBOIMG_PARTITION_SIZE := 8388608
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
