@@ -82,7 +82,7 @@ void vendor_load_device_properties()
 
     device_region = GetProperty("ro.boot.hwc", "");
     device_hwversion = GetProperty("ro.boot.hwversion", "");
-    if (device_region == "Global_B" && device_hwversion == "18.39.0") {
+    if (device_region == "Global_B" && (device_hwversion == "18.39.0" || device_hwversion == "19.39.0")) {
         property_override_device("ro.build.description", "willow-user 9 PKQ1.190616.001 V11.0.9.0.PCXEUXM release-keys");
         for (const auto &source : ro_props_default_source_order) {
             set_ro_build_prop(source, "fingerprint", "xiaomi/willow_eea/willow:9/PKQ1.190616.001/V11.0.9.0.PCXEUXM:user/release-keys");
