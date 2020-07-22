@@ -24,7 +24,7 @@
 # Inherit from sm6125-common
 $(call inherit-product, device/xiaomi/sm6125-common/common.mk)
 
-DEVICE_PATH := device/xiaomi/lavender
+DEVICE_PATH := device/xiaomi/ginkgo
 
 # Inherit properties.mk
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
@@ -57,4 +57,4 @@ PRODUCT_PACKAGES += \
     init.device.rc
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/xiaomi/lavender/lavender-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)

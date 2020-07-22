@@ -25,10 +25,10 @@
 # Inherit from sm6125-common
 -include device/xiaomi/sm6125-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/lavender
+DEVICE_PATH := device/xiaomi/ginkgo
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := lavender
+TARGET_OTA_ASSERT_DEVICE := ginkgo
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -38,7 +38,7 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
-TARGET_KERNEL_CONFIG := lavender_defconfig
+TARGET_KERNEL_CONFIG := ginkgo_defconfig
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 
@@ -59,4 +59,4 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 VENDOR_SECURITY_PATCH := 2019-10-05
 
 # Inherit the proprietary files
--include vendor/xiaomi/lavender/BoardConfigVendor.mk
+-include vendor/xiaomi/ginkgo/BoardConfigVendor.mk

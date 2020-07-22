@@ -17,7 +17,7 @@
 
 set -e
 
-export DEVICE=lavender
+export DEVICE=ginkgo
 export VENDOR=xiaomi
 export DEVICE_COMMON=sm6125-common
 
