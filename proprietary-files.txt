@@ -1286,6 +1286,8 @@ vendor/firmware/ipa_fws.elf
 
 # Sensors
 vendor/bin/sensors.qti
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/sns_reg_config
 vendor/lib64/libssc.so
 vendor/lib64/sensors.ssc.so
 
