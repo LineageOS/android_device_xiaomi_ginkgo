@@ -1289,6 +1289,9 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.mdt
 vendor/firmware/ipa_fws.elf
 
+# NFC
+vendor/lib/libsn100u_fw.so
+
 # Sensors
 vendor/bin/sensors.qti
 vendor/etc/sensors/hals.conf
