@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.device.rc
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
