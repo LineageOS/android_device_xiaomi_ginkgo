@@ -31,3 +31,6 @@ DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 # Remove vtcamera for ginkgo
 gawk -i inplace '{ p = 1 } /<CameraModuleConfig>/{ t = $0; while (getline > 0) { t = t ORS $0; if (/ginkgo_vtcamera/) p = 0; if (/<\/CameraModuleConfig>/) break } $0 = t } p' "${DEVICE_BLOB_ROOT}/vendor/etc/camera/camera_config.xml"
+sed -i "s/ginkgo_s5kgm1_sunny_i/ginkgo_s5kgm1_ofilm_ii/g" "${DEVICE_BLOB_ROOT}/vendor/etc/camera/ginkgo_s5kgm1_sunny_i_chromatix.xml"
+sed -i "s/ginkgo_s5kgm1_ofilm_ii_common/ginkgo_s5kgm1_sunny_i_common/g" "${DEVICE_BLOB_ROOT}/vendor/etc/camera/ginkgo_s5kgm1_sunny_i_chromatix.xml"
+sed -i "s/ginkgo_s5kgm1_ofilm_ii_postproc/ginkgo_s5kgm1_sunny_i_postproc/g" "${DEVICE_BLOB_ROOT}/vendor/etc/camera/ginkgo_s5kgm1_sunny_i_chromatix.xml"
