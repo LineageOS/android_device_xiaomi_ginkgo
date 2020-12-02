@@ -1,4 +1,4 @@
-# ginkgo package version: QKQ1.200114.002 20.7.9, unless stated otherwise
+# ginkgo package version: QKQ1.200114.002 v12.0.2.0.QCOMIXM, unless stated otherwise
 
 # Audio ACDB
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
