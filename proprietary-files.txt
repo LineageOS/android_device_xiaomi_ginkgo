@@ -1334,8 +1334,8 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.mdt
 vendor/firmware/ipa_fws.elf
 
-# NFC
-vendor/lib/libsn100u_fw.so
+# NFC - from willow V12.0.2.0.RCXMIXM
+vendor/lib/libsn100u_fw.so|8f22d9b555acc25b501f1c48983e7d33547231f7
 
 # Sensors
 vendor/bin/sensors.qti
