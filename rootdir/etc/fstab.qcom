@@ -13,6 +13,7 @@
 /dev/block/bootdevice/by-name/system                     /                    ext4    ro,barrier=1,discard                                                                            wait,avb
 /dev/block/bootdevice/by-name/userdata                   /data                f2fs    noatime,nosuid,nodev,discard,fsync_mode=nobarrier                                               latemount,wait,check,fileencryption=ice,wrappedkey,reservedsize=128M,quota
 /dev/block/bootdevice/by-name/userdata                   /data                ext4    noatime,nosuid,nodev,barrier=1,noauto_da_alloc,lazytime                                         latemount,wait,check,fileencryption=ice,crashcheck,reservedsize=128M,quota
+/dev/block/bootdevice/by-name/metadata                   /metadata            ext4    noatime,nosuid,nodev,discard                                                                    wait,check,formattable,first_stage_mount
 /dev/block/bootdevice/by-name/misc                       /misc                emmc    defaults                                                                                        defaults
 /dev/block/bootdevice/by-name/modem                      /vendor/firmware_mnt vfat    ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0    wait
 /dev/block/bootdevice/by-name/bluetooth                  /vendor/bt_firmware  vfat    ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait
