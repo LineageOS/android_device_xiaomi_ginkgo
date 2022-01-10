@@ -82,9 +82,10 @@ void vendor_load_device_properties()
 
     device_region = GetProperty("ro.boot.hwc", "");
     device_hwversion = GetProperty("ro.boot.hwversion", "");
-    if (device_region == "Global_B" && (device_hwversion == "18.31.0" || 
+    if (device_region == "Global_B" && (device_hwversion == "18.31.0" ||
         device_hwversion == "18.39.0" || device_hwversion == "19.39.0")) {
         property_override_device("ro.build.description", "willow-user 11 RKQ1.201004.002 V12.5.2.0.RCXMIXM release-keys");
+        property_override_device("ro.boot.product.hardware.sku", "nfc");
         for (const auto &source : ro_props_default_source_order) {
             set_ro_build_prop(source, "fingerprint", "xiaomi/willow/willow:11/RKQ1.201004.002/V12.5.2.0.RCXMIXM:user/release-keys");
             set_ro_product_prop(source, "device", "willow");
