@@ -23,6 +23,7 @@ TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/ginkgo.config
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/4744000.sdhci
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4831838208
