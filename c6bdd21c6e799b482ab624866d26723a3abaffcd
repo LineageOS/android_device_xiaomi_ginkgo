@@ -16,6 +16,24 @@
       "message": "Doesn\u0027t this also break existing encrypted users?",
       "revId": "c6bdd21c6e799b482ab624866d26723a3abaffcd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "004c5dbb_cb92dc8d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2022-03-15T15:03:41Z",
+      "side": 1,
+      "message": "nope, it\u0027s tested, lineage-17 to 18 upgrade works fine. this just mounts the metadata partition",
+      "parentUuid": "40b69056_7b238d97",
+      "revId": "c6bdd21c6e799b482ab624866d26723a3abaffcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
