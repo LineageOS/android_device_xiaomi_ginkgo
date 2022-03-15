@@ -97,4 +97,4 @@ PRODUCT_PACKAGES += \
     init.device.rc
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
+$(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
