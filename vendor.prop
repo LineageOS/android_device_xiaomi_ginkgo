@@ -1,3 +1,6 @@
+# Camera
+vendor.camera.remapid=0 1 20 21 22 61
+
 # Fingerprint
 persist.vendor.fingerprint.type=rear
 persist.vendor.fingerprint.detect_interaction=true
