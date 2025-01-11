@@ -35,3 +35,13 @@ on early-init && property:ro.boot.hwc=Global_B && property:ro.boot.hwversion=18.
 
 on early-init && property:ro.boot.hwc=Global_B && property:ro.boot.hwversion=19.39.0
     setprop ro.boot.product.hardware.sku nfc
+
+on property:ro.boot.product.hardware.sku=nfc
+    enable nqnfc_2_0_hal_service
+
+service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
