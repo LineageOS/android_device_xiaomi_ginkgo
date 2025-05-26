@@ -70,6 +70,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
     $(DEVICE_PATH)/overlay-lineage
 
+PRODUCT_PACKAGES += \
+    LineageSDKGinkgo
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
