@@ -72,6 +72,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
+    ApertureGinkgo \
     LineageSDKGinkgo
 
 # Shipping API level

@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "ApertureGinkgo",
+    theme: "ApertureGinkgo",
+    product_specific: true,
+}
